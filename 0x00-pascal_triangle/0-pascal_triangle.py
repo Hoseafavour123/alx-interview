@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-
 """ Returns a list of lists of integers representing the Pascal's Triangle """
+
 
 def pascal_triangle(n):
     """_summary_
-
     Args:
         n (int): number of rows
     """
-    
     pascal_tri = [[1], [1, 1]]
     
     if n <= 0:
@@ -26,9 +24,8 @@ def pascal_triangle(n):
             for j in range(1, len(pascal_tri[-1])):
                 num = (pascal_tri[-1][j - 1] + pascal_tri[-1][j])
                 tmp.append(num)
-                
+                    
             tmp.append(1)
             pascal_tri.append(tmp)
             
-        return pascal_tri
-            
+        return pascal_tri         
