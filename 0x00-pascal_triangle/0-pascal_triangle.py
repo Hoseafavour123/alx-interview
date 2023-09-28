@@ -10,9 +10,9 @@ def pascal_triangle(n):
     pascal_tri = [[1], [1, 1]]
     
     if n <= 0:
-        return []
+        return [[]]
     elif n == 1:
-        return list(pascal_tri[0])
+        return [pascal_tri[0]]
     elif n == 2:
         return pascal_tri
     
