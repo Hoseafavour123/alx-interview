@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""The locked boxes interviw prep"""
 
 def canUnlockAll(boxes):
     """Locked boxes"""
